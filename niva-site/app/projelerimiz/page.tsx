@@ -8,42 +8,36 @@ export default function ProjelerimizPage() {
     {
       id: '01',
       title: 'Taze Gıda & Meyve-Sebze Reyonu Konsept Tasarımı',
-      location: 'İstanbul, Türkiye',
       description: 'Ahşap konsept arabalar ve yönlendirmelerle taze gıda alım tecrübesini ve metrekare kârlılığını artıran meyve-sebze alanı mimarisi.',
       image: '/projemanav.JPG'
     },
     {
       id: '02',
       title: 'Gurme Şarküteri Reyonu & Teşhir Mimarisi',
-      location: 'İstanbul, Türkiye',
       description: 'Ahşap dokulu tavan panelleri, özelleştirilmiş aydınlatma ve kurumsal kimliği yansıtan geometrik kırmızı seramik kaplamalarla, taze ürün algısını ve alışveriş deneyimini en üst seviyeye çıkaran entegre bir şarküteri alanı tasarımı.',
       image: '/Peynir.JPG'
     },
     {
       id: '03',
       title: 'Perakende Cephe & Kurumsal AVM İçi Mağaza Tasarımı',
-      location: 'Bakü, Azerbaycan',
       description: 'Yüksek tavanlı ve geniş vitrin alanına sahip AVM içi mağazada markalama, aydınlatma ve geçiş hatlarının entegre tasarımı.',
       image: '/store.PNG'
     },
     {
       id: '04',
       title: 'Gurme Şarküteri & Soğuk Teşhir Operasyonu',
-      location: 'İstanbul, Türkiye',
       description: 'Ergonomik ada tezgahlar, tavan aydınlatmaları ve hijyenik sergileme üniteleri ile premium şarküteri alan planlaması.',
       image: '/projemarket.JPG'
     },
     {
       id: '05',
       title: 'Organik Ürünler & Modüler Raf Sistemleri',
-      location: 'İstanbul, Türkiye',
       description: 'Doğal ahşap kasalar ve siyah endüstriyel metal raflarla organik ve doğal gıda kategorisinin öne çıkarılması.',
       image: '/projeorganik.JPG'
     },
     {
       id: '06',
       title: 'Mağaza İçi Koridor & Kategori Yönlendirme Mimarisi',
-      location: 'İstanbul, Türkiye',
       description: 'Geometrik tavan aydınlatmaları, ahşap kaplama detaylar ve numaralandırılmış kategori panoları ile müşteri sirkülasyonunu ve alışveriş konforunu artıran koridor planlaması.',
       image: '/sakuteri.JPG'
     }
