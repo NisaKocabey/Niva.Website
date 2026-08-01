@@ -39,7 +39,7 @@ const HERO_SLIDES = [
 ];
 
 const STATS = [
-  { value: '%10+', label: 'Ortalama  Verimlilik Artışı' },
+  { value: '%10+', label: 'Ortalama Verimlilik Artışı' },
   { value: '500+', label: 'Optimize Edilen & Yönetilen Mağaza' },
   { value: '20+ Yıl', label: 'Sektörel Saha ve Yönetim Tecrübesi' },
   { value: '%98', label: 'Sürdürülebilir Müşteri Memnuniyeti' }
@@ -47,22 +47,18 @@ const STATS = [
 
 const PRINCIPLES = [
   {
-    number: '01',
     title: 'Saha Odaklı Yaklaşım',
     description: 'Masabaşı teorilerle değil; doğrudan mağaza koridorlarında, rafta ve kasada çalışan pratik ve uygulanabilir çözümler sunuyoruz.'
   },
   {
-    number: '02',
     title: 'Veri Temelli Perakende Matematiği',
     description: 'Kararlarımızı sezgilerle değil; stok devir hızı, metrekare verimliliği, fire oranları ve satış analitiği verilerine dayanarak alıyoruz.'
   },
   {
-    number: '03',
     title: 'Sürdürülebilir Kurumsal Dönüşüm',
     description: 'Günü kurtaran geçici reçeteler yerine, kurum kültürünüze ve saha ekiplerinize yerleşen kalıcı sistemler inşa ediyoruz.'
   },
   {
-    number: '04',
     title: 'Uçtan Uca Sorumluluk',
     description: 'Strateji belgesini teslim edip çekilmiyoruz; satın almadan görsel düzenlemeye, saha eğitiminden kira ve lokasyon müzakerelerine kadar yanınızdayız.'
   }
@@ -179,7 +175,7 @@ export default function HomePage() {
       </section>
 
 
-      {/* 2. EDİTORYAL METİN BÖLÜMÜ (SADECE BİREBİR İSTEDİĞİN METİNLER) */}
+      {/* 2. EDİTORYAL METİN BÖLÜMÜ */}
       <section className="py-20 md:py-28 max-w-4xl mx-auto px-6">
         
         {/* Rozet */}
@@ -237,14 +233,11 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {PRINCIPLES.map((item) => (
+            {PRINCIPLES.map((item, idx) => (
               <div
-                key={item.number}
+                key={idx}
                 className="bg-white border border-[#0F172A]/10 hover:border-[#B89765] p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-1 shadow-sm hover:shadow-md"
               >
-                <div className="text-xs font-mono text-[#B89765] font-bold mb-6 bg-[#B89765]/10 w-fit px-3 py-1 rounded-full border border-[#B89765]/20">
-                  {item.number}
-                </div>
                 <h3 className="text-xl font-bold text-[#0F172A] mb-4 group-hover:text-[#B89765] transition-colors">
                   {item.title}
                 </h3>
@@ -259,7 +252,7 @@ export default function HomePage() {
       </section>
 
 
-      {/* 5. METODOLOJİ (SÜREÇ) ÖZETİ */}
+      {/* 5. METODOLOJİ ÖZETİ */}
       <section className="py-24 bg-[#F4F0E8] border-t border-[#0F172A]/10">
         <div className="max-w-7xl mx-auto px-6">
           
