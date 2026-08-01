@@ -67,28 +67,40 @@ export default function SiteFooter() {
               İLETİŞİM
             </span>
             <div className="space-y-4 text-xs text-[#334155]">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-[#0F172A]/5 flex items-center justify-center text-[#0F172A]">
-                  
+              
+              {/* Türkiye Numarası */}
+              <a 
+                href="tel:+905428499398" 
+                className="flex items-center gap-3 hover:text-[#B89765] transition-colors"
+              >
+                <div className="w-8 h-8 rounded-full bg-[#0F172A]/5 flex items-center justify-center text-[#0F172A] shrink-0">
+                  📞
                 </div>
                 <span>+90 542 849 93 98</span>
-              </div>
-                 📞
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-[#0F172A]/5 flex items-center justify-center text-[#0F172A]">
+              </a>
+
+              {/* Azerbaycan Numarası */}
+              <a 
+                href="tel:+994992301022" 
+                className="flex items-center gap-3 hover:text-[#B89765] transition-colors"
+              >
+                <div className="w-8 h-8 rounded-full bg-[#0F172A]/5 flex items-center justify-center text-[#0F172A] shrink-0">
                   📞
                 </div>
                 <span>+994 99 230 10 22</span>
-              </div>
+              </a>
 
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-[#0F172A]/5 flex items-center justify-center text-[#0F172A]">
+              {/* E-Posta */}
+              <a 
+                href="mailto:nivaconsultingtr@gmail.com" 
+                className="flex items-center gap-3 hover:text-[#B89765] transition-colors"
+              >
+                <div className="w-8 h-8 rounded-full bg-[#0F172A]/5 flex items-center justify-center text-[#0F172A] shrink-0">
                   ✉️
                 </div>
-                <a href="mailto:nivaconsultingtr@gmail.com" className="hover:text-[#B89765] transition-colors">
-                  nivaconsultingtr@gmail.com
-                </a>
-              </div>
+                <span>nivaconsultingtr@gmail.com</span>
+              </a>
+
             </div>
           </div>
 
@@ -101,7 +113,7 @@ export default function SiteFooter() {
           </div>
           <button 
             onClick={scrollToTop}
-            className="text-[#B89765] hover:text-[#0F172A] uppercase tracking-widest transition-colors flex items-center gap-1 font-semibold"
+            className="text-[#B89765] hover:text-[#0F172A] uppercase tracking-widest transition-colors flex items-center gap-1 font-semibold cursor-pointer"
           >
             BAŞA DÖN ↑
           </button>
