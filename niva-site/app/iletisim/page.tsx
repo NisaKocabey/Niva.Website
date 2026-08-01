@@ -1,24 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React from 'react';
 import Navbar from '../components/Navbar';
 
 export default function IletisimPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    subject: 'Strateji & Büyüme Danışmanlığı',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Mesajınız başarıyla iletildi. En kısa sürede sizinle iletişime geçeceğiz.');
-  };
-
   return (
     <div className="min-h-screen bg-[#FBF9F6] text-[#0F172A] font-sans selection:bg-[#0F172A] selection:text-[#FBF9F6]">
       <Navbar />
@@ -99,7 +84,7 @@ export default function IletisimPage() {
             </div>
           </div>
 
-          {/* SAĞ TARAF: Görüşme Randevu Formu */}
+          {/* SAĞ TARAF: Görüşme Randevu Formu (Formspree Bağlantılı) */}
           <div className="lg:col-span-7 bg-white border border-[#0F172A]/10 p-8 sm:p-10 rounded-2xl shadow-sm">
             <h2 className="text-2xl sm:text-3xl font-serif text-[#0F172A] mb-2">
               Görüşme Randevu Formu
@@ -108,7 +93,7 @@ export default function IletisimPage() {
               Süreçlerinizi değerlendirmek ve perakende operasyonunuzu büyütmek için formu doldurabilirsiniz.
             </p>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form action="https://formspree.io/f/xvzejkqb" method="POST" className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {/* Ad Soyad */}
                 <div>
@@ -117,11 +102,10 @@ export default function IletisimPage() {
                   </label>
                   <input
                     type="text"
+                    name="name"
                     required
                     placeholder="Örn: Ahmet Yılmaz"
                     className="w-full bg-[#FBF9F6] border border-[#0F172A]/15 focus:border-[#B89765] focus:outline-none rounded-lg px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94A3B8] transition-colors"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   />
                 </div>
 
@@ -132,11 +116,10 @@ export default function IletisimPage() {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     required
                     placeholder="Örn: ahmet@sirketiniz.com"
                     className="w-full bg-[#FBF9F6] border border-[#0F172A]/15 focus:border-[#B89765] focus:outline-none rounded-lg px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94A3B8] transition-colors"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   />
                 </div>
               </div>
@@ -149,11 +132,10 @@ export default function IletisimPage() {
                   </label>
                   <input
                     type="tel"
+                    name="phone"
                     required
                     placeholder="05XX XXX XX XX"
                     className="w-full bg-[#FBF9F6] border border-[#0F172A]/15 focus:border-[#B89765] focus:outline-none rounded-lg px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94A3B8] transition-colors"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   />
                 </div>
 
@@ -164,10 +146,9 @@ export default function IletisimPage() {
                   </label>
                   <input
                     type="text"
+                    name="company"
                     placeholder="Örn: Niva Retail"
                     className="w-full bg-[#FBF9F6] border border-[#0F172A]/15 focus:border-[#B89765] focus:outline-none rounded-lg px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94A3B8] transition-colors"
-                    value={formData.company}
-                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                   />
                 </div>
               </div>
@@ -178,9 +159,9 @@ export default function IletisimPage() {
                   DANIŞMANLIK KONUSU
                 </label>
                 <select
+                  name="subject"
                   className="w-full bg-[#FBF9F6] border border-[#0F172A]/15 focus:border-[#B89765] focus:outline-none rounded-lg px-4 py-3 text-sm text-[#0F172A] transition-colors cursor-pointer"
-                  value={formData.subject}
-                  onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                  defaultValue="Strateji & Büyüme Danışmanlığı"
                 >
                   <option value="Strateji & Büyüme Danışmanlığı">Strateji & Büyüme Danışmanlığı</option>
                   <option value="Saha & Mağazacılık Operasyonu">Saha Mağazacılık & Operasyonu</option>
@@ -192,14 +173,14 @@ export default function IletisimPage() {
               {/* Mesajınız */}
               <div>
                 <label className="block text-xs font-mono uppercase text-[#334155] font-semibold tracking-wider mb-2">
-                  MESAJINIZ / TALEP DETAYI
+                  MESAJINIZ / TALEP DETAYI *
                 </label>
                 <textarea
+                  name="message"
+                  required
                   rows={4}
                   placeholder="Kısaca bahsetmek istediğiniz detayları yazabilirsiniz..."
                   className="w-full bg-[#FBF9F6] border border-[#0F172A]/15 focus:border-[#B89765] focus:outline-none rounded-lg px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94A3B8] transition-colors resize-none"
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 ></textarea>
               </div>
 
