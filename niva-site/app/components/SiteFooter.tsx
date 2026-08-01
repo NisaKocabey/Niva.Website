@@ -73,7 +73,7 @@ export default function SiteFooter() {
                 </div>
                 <span>+90 542 849 93 98</span>
               </div>
-
+                 📞
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-[#0F172A]/5 flex items-center justify-center text-[#0F172A]">
                   📞
