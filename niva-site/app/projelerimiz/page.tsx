@@ -7,7 +7,7 @@ export default function ProjelerimizPage() {
   const projects = [
     {
       id: '01',
-      title: 'Taze Gıda & Manav Reyonu Konsept Tasarımı',
+      title: 'Taze Gıda & Meyve-Sebze Reyonu Konsept Tasarımı',
       location: 'İstanbul, Türkiye',
       description: 'Ahşap konsept arabalar ve yönlendirmelerle taze gıda alım tecrübesini ve metrekare kârlılığını artıran meyve-sebze alanı mimarisi.',
       image: '/projemanav.JPG'
@@ -17,14 +17,14 @@ export default function ProjelerimizPage() {
       title: 'Gurme Şarküteri Reyonu & Teşhir Mimarisi',
       location: 'İstanbul, Türkiye',
       description: 'Ahşap dokulu tavan panelleri, özelleştirilmiş aydınlatma ve kurumsal kimliği yansıtan geometrik kırmızı seramik kaplamalarla, taze ürün algısını ve alışveriş deneyimini en üst seviyeye çıkaran entegre bir şarküteri alanı tasarımı.',
-      image: '/peynir.jpg'
+      image: '/peynir.JPG'
     },
     {
       id: '03',
       title: 'Perakende Cephe & Kurumsal AVM İçi Mağaza Tasarımı',
       location: 'Bakü, Azerbaycan',
       description: 'Yüksek tavanlı ve geniş vitrin alanına sahip AVM içi mağazada markalama, aydınlatma ve geçiş hatlarının entegre tasarımı.',
-      image: '/store.png'
+      image: '/store.PNG'
     },
     {
       id: '04',
