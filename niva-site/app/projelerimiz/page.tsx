@@ -19,9 +19,9 @@ export default function ProjelerimizPage() {
     },
     {
       id: '03',
-      title: 'Perakende Cephe & Kurumsal AVM İçi Mağaza Tasarımı',
-      description: 'Yüksek tavanlı ve geniş vitrin alanına sahip AVM içi mağazada markalama, aydınlatma ve geçiş hatlarının entegre tasarımı.',
-      image: '/store.PNG'
+      title: 'Modern Cadde & Perakende Cephe Mimari Tasarımı',
+      description: 'Geniş cam vitrin hatları, doğal ahşap cephe kaplamaları ve açık alan oturma konseptleriyle marka görünürlüğünü ve müşteri çekim gücünü maksimuma çıkaran entegre dış cephe ve mağaza mimarisi.' ,
+      image: '/retail.JPG'
     },
     {
       id: '04',
