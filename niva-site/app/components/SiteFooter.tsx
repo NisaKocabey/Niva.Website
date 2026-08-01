@@ -12,10 +12,11 @@ export default function SiteFooter() {
     <footer className="bg-[#FBF9F6] border-t border-[#0F172A]/10 pt-16 pb-12 text-[#0F172A] mt-auto">
       <div className="max-w-7xl mx-auto px-6">
         
-        {/* Üst Kısım */}
+        {/* Üst Kısım: Logo & İletişim */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between pb-12 border-b border-[#0F172A]/10 gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full bg-[#B89765] text-white flex items-center justify-center font-bold text-xl">
+            {/* Üst logo ile birebir aynı: Lacivert arka plan, beyaz N harfi */}
+            <div className="w-12 h-12 rounded-full bg-[#0F172A] text-white flex items-center justify-center font-serif font-bold text-xl shadow-sm">
               N
             </div>
             <div>
@@ -67,8 +68,6 @@ export default function SiteFooter() {
               İLETİŞİM
             </span>
             <div className="space-y-4 text-xs text-[#334155]">
-              
-              {/* Türkiye Numarası */}
               <a 
                 href="tel:+905428499398" 
                 className="flex items-center gap-3 hover:text-[#B89765] transition-colors"
@@ -79,7 +78,6 @@ export default function SiteFooter() {
                 <span>+90 542 849 93 98</span>
               </a>
 
-              {/* Azerbaycan Numarası */}
               <a 
                 href="tel:+994992301022" 
                 className="flex items-center gap-3 hover:text-[#B89765] transition-colors"
@@ -90,7 +88,6 @@ export default function SiteFooter() {
                 <span>+994 99 230 10 22</span>
               </a>
 
-              {/* E-Posta */}
               <a 
                 href="mailto:nivaconsultingtr@gmail.com" 
                 className="flex items-center gap-3 hover:text-[#B89765] transition-colors"
@@ -100,7 +97,6 @@ export default function SiteFooter() {
                 </div>
                 <span>nivaconsultingtr@gmail.com</span>
               </a>
-
             </div>
           </div>
 
