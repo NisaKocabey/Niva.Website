@@ -105,7 +105,7 @@ export default function ProjelerimizPage() {
               <div className="p-6 relative z-10 -mt-8 bg-white flex flex-col justify-between flex-grow">
                 <div>
                   <span className="text-[11px] font-mono text-[#64748B] tracking-widest uppercase block mb-2">
-                    📍 {project.location}
+
                   </span>
                   <h3 className="font-serif text-xl font-bold text-[#0F172A] group-hover:text-[#B89765] transition-colors mb-3">
                     {project.title}
