@@ -17,7 +17,7 @@ export default function ProjelerimizPage() {
       title: 'Gurme Şarküteri Reyonu & Teşhir Mimarisi',
       location: 'İstanbul, Türkiye',
       description: 'Ahşap dokulu tavan panelleri, özelleştirilmiş aydınlatma ve kurumsal kimliği yansıtan geometrik kırmızı seramik kaplamalarla, taze ürün algısını ve alışveriş deneyimini en üst seviyeye çıkaran entegre bir şarküteri alanı tasarımı.',
-      image: '/peynir.JPG'
+      image: '/Peynir.JPG'
     },
     {
       id: '03',
