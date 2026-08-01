@@ -15,7 +15,7 @@ export default function ProjelerimizPage() {
       id: '02',
       title: 'Gurme Şarküteri Reyonu & Teşhir Mimarisi',
       description: 'Ahşap dokulu tavan panelleri, özelleştirilmiş aydınlatma ve kurumsal kimliği yansıtan geometrik kırmızı seramik kaplamalarla, taze ürün algısını ve alışveriş deneyimini en üst seviyeye çıkaran entegre bir şarküteri alanı tasarımı.',
-      image: '/https://ibb.co/j9Z2T7hh'
+      image: 'cheese.PNG'
     },
     {
       id: '03',
