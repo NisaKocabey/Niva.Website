@@ -27,13 +27,13 @@ export default function ProjelerimizPage() {
       id: '04',
       title: 'Gurme Şarküteri & Soğuk Teşhir Operasyonu',
       description: 'Ergonomik ada tezgahlar, tavan aydınlatmaları ve hijyenik sergileme üniteleri ile premium şarküteri alan planlaması.',
-      image: '/projemarket.JPG'
+      image: '/projeorganik.JPG'
     },
     {
       id: '05',
       title: 'Organik Ürünler & Modüler Raf Sistemleri',
       description: 'Doğal ahşap kasalar ve siyah endüstriyel metal raflarla organik ve doğal gıda kategorisinin öne çıkarılması.',
-      image: '/projeorganik.JPG'
+      image: '/projemarket.JPG'
     },
     {
       id: '06',
